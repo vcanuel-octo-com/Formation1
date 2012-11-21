@@ -22,8 +22,8 @@
 
 - (void)viewDidLoad
 {
+    DTrace();
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 	
 	// Récupération des accounts
     NSArray *accounts = [FOAccountsService loadSubscribedProductsInCache];
@@ -31,12 +31,60 @@
 	
 	NSLog(@"%@",accounts);
 	NSLog(@"%@",anAccount);
+	
+	// Création d'un label
+    UILabel *labelProductName = [[UILabel alloc] init];
+    [labelProductName setFrame:CGRectMake(0,
+                                          0,
+                                          CGRectGetWidth(self.view.frame),
+                                          CGRectGetHeight(self.view.frame))];
+    [labelProductName setTextColor:[UIColor whiteColor]];
+    [labelProductName setTextAlignment:NSTextAlignmentCenter];
+    [labelProductName setText:anAccount.productName];
+    [labelProductName setFont:[UIFont systemFontOfSize:30]];
+    [labelProductName setBackgroundColor:[UIColor blackColor]];
+    [labelProductName setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
+    
+    // Ajout à la vue du controller
+    [self.view addSubview:labelProductName];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    DTrace();
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    DTrace();
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillUnload
+{
+    DTrace();
+    [super viewWillUnload];
+}
+
+- (void)viewDidUnload
+{
+    DTrace();
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    DTrace();
+    return YES;
+    //(interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
 - (void)didReceiveMemoryWarning
 {
+    DTrace();
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

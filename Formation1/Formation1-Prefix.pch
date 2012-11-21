@@ -12,3 +12,18 @@
 	#import <UIKit/UIKit.h>
 	#import <Foundation/Foundation.h>
 #endif
+
+#ifdef DEBUG
+#define DLog(...) NSLog(__VA_ARGS__)
+#define DTrace() NSLog(@"%s", __PRETTY_FUNCTION__)
+#else
+#define DLog(...) /* */
+#define DTrace() /* */
+#endif
+
+#define ALog(...) NSLog(__VA_ARGS__)
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define UIColorFromRGBA(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alphaValue]
+
