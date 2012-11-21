@@ -17,8 +17,8 @@
 		58F42959165D58AB00CCC696 /* FOAccountsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F42958165D58AB00CCC696 /* FOAccountsService.m */; };
 		58F42962165D591800CCC696 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F42961165D591800CCC696 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		58F42964165D598100CCC696 /* subscribedProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 58F42963165D598100CCC696 /* subscribedProducts.json */; };
-		58F4296C165D5C0700CCC696 /* FOAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4296A165D5C0700CCC696 /* FOAccountViewController.m */; };
 		58F4296D165D5C0700CCC696 /* FOAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F4296B165D5C0700CCC696 /* FOAccountViewController.xib */; };
+		58F4296F165D5D2200CCC696 /* FOAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4296E165D5D2200CCC696 /* FOAccountViewController.m */; };
 		58F646F1165D5114009509F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F646F0165D5114009509F7 /* UIKit.framework */; };
 		58F646F3165D5114009509F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F646F2165D5114009509F7 /* Foundation.framework */; };
 		58F646F5165D5114009509F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F646F4165D5114009509F7 /* CoreGraphics.framework */; };
@@ -58,8 +58,8 @@
 		58F42961165D591800CCC696 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		58F42963165D598100CCC696 /* subscribedProducts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = subscribedProducts.json; sourceTree = "<group>"; };
 		58F42969165D5C0700CCC696 /* FOAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOAccountViewController.h; sourceTree = "<group>"; };
-		58F4296A165D5C0700CCC696 /* FOAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOAccountViewController.m; sourceTree = "<group>"; };
 		58F4296B165D5C0700CCC696 /* FOAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FOAccountViewController.xib; sourceTree = "<group>"; };
+		58F4296E165D5D2200CCC696 /* FOAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOAccountViewController.m; sourceTree = "<group>"; };
 		58F646EC165D5114009509F7 /* Formation1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Formation1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F646F0165D5114009509F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		58F646F2165D5114009509F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				58F42969165D5C0700CCC696 /* FOAccountViewController.h */,
-				58F4296A165D5C0700CCC696 /* FOAccountViewController.m */,
+				58F4296E165D5D2200CCC696 /* FOAccountViewController.m */,
 				58F4296B165D5C0700CCC696 /* FOAccountViewController.xib */,
 				58F42938165D544500CCC696 /* FOViewController.h */,
 				58F42939165D544500CCC696 /* FOViewController.m */,
@@ -369,7 +369,7 @@
 				58F42946165D571A00CCC696 /* FOAccount.m in Sources */,
 				58F42959165D58AB00CCC696 /* FOAccountsService.m in Sources */,
 				58F42962165D591800CCC696 /* JSONKit.m in Sources */,
-				58F4296C165D5C0700CCC696 /* FOAccountViewController.m in Sources */,
+				58F4296F165D5D2200CCC696 /* FOAccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
