@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58F42930165D53E800CCC696 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F4292D165D53E800CCC696 /* Default-568h@2x.png */; };
+		58F42931165D53E800CCC696 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F4292E165D53E800CCC696 /* Default.png */; };
+		58F42932165D53E800CCC696 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F4292F165D53E800CCC696 /* Default@2x.png */; };
+		58F4293F165D544500CCC696 /* FOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F42939165D544500CCC696 /* FOViewController.m */; };
+		58F42940165D544500CCC696 /* FOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4293B165D544500CCC696 /* FOAppDelegate.m */; };
+		58F42943165D548200CCC696 /* FOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F42941165D548200CCC696 /* FOViewController.xib */; };
 		58F646F1165D5114009509F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F646F0165D5114009509F7 /* UIKit.framework */; };
 		58F646F3165D5114009509F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F646F2165D5114009509F7 /* Foundation.framework */; };
 		58F646F5165D5114009509F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F646F4165D5114009509F7 /* CoreGraphics.framework */; };
 		58F646FB165D5114009509F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58F646F9165D5114009509F7 /* InfoPlist.strings */; };
 		58F646FD165D5114009509F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F646FC165D5114009509F7 /* main.m */; };
-		58F64701165D5114009509F7 /* FOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F64700165D5114009509F7 /* FOAppDelegate.m */; };
-		58F64703165D5114009509F7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F64702165D5114009509F7 /* Default.png */; };
-		58F64705165D5114009509F7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F64704165D5114009509F7 /* Default@2x.png */; };
-		58F64707165D5114009509F7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F64706165D5114009509F7 /* Default-568h@2x.png */; };
-		58F6470A165D5114009509F7 /* FOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F64709165D5114009509F7 /* FOViewController.m */; };
-		58F6470D165D5114009509F7 /* FOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F6470B165D5114009509F7 /* FOViewController.xib */; };
 		58F64715165D5114009509F7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F64714165D5114009509F7 /* SenTestingKit.framework */; };
 		58F64716165D5114009509F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F646F0165D5114009509F7 /* UIKit.framework */; };
 		58F64717165D5114009509F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F646F2165D5114009509F7 /* Foundation.framework */; };
@@ -36,6 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58F4292D165D53E800CCC696 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		58F4292E165D53E800CCC696 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		58F4292F165D53E800CCC696 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		58F42938165D544500CCC696 /* FOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOViewController.h; sourceTree = "<group>"; };
+		58F42939165D544500CCC696 /* FOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOViewController.m; sourceTree = "<group>"; };
+		58F4293A165D544500CCC696 /* FOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOAppDelegate.h; sourceTree = "<group>"; };
+		58F4293B165D544500CCC696 /* FOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOAppDelegate.m; sourceTree = "<group>"; };
+		58F42942165D548200CCC696 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FOViewController.xib; sourceTree = "<group>"; };
 		58F646EC165D5114009509F7 /* Formation1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Formation1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F646F0165D5114009509F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		58F646F2165D5114009509F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,14 +52,6 @@
 		58F646FA165D5114009509F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58F646FC165D5114009509F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58F646FE165D5114009509F7 /* Formation1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Formation1-Prefix.pch"; sourceTree = "<group>"; };
-		58F646FF165D5114009509F7 /* FOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FOAppDelegate.h; sourceTree = "<group>"; };
-		58F64700165D5114009509F7 /* FOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOAppDelegate.m; sourceTree = "<group>"; };
-		58F64702165D5114009509F7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		58F64704165D5114009509F7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		58F64706165D5114009509F7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		58F64708165D5114009509F7 /* FOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FOViewController.h; sourceTree = "<group>"; };
-		58F64709165D5114009509F7 /* FOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOViewController.m; sourceTree = "<group>"; };
-		58F6470C165D5114009509F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FOViewController.xib; sourceTree = "<group>"; };
 		58F64713165D5114009509F7 /* Formation1Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Formation1Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F64714165D5114009509F7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		58F6471C165D5114009509F7 /* Formation1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Formation1Tests-Info.plist"; sourceTree = "<group>"; };
@@ -84,6 +84,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58F42925165D534D00CCC696 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58F4292D165D53E800CCC696 /* Default-568h@2x.png */,
+				58F4292E165D53E800CCC696 /* Default.png */,
+				58F4292F165D53E800CCC696 /* Default@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		58F42936165D544500CCC696 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				58F4293A165D544500CCC696 /* FOAppDelegate.h */,
+				58F4293B165D544500CCC696 /* FOAppDelegate.m */,
+				58F42937165D544500CCC696 /* Controllers */,
+				58F4293C165D544500CCC696 /* Model */,
+				58F4293D165D544500CCC696 /* Services */,
+				58F4293E165D544500CCC696 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		58F42937165D544500CCC696 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58F42938165D544500CCC696 /* FOViewController.h */,
+				58F42939165D544500CCC696 /* FOViewController.m */,
+				58F42941165D548200CCC696 /* FOViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		58F4293C165D544500CCC696 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58F4293D165D544500CCC696 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		58F4293E165D544500CCC696 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		58F646E1165D5114009509F7 = {
 			isa = PBXGroup;
 			children = (
@@ -117,11 +171,8 @@
 		58F646F6165D5114009509F7 /* Formation1 */ = {
 			isa = PBXGroup;
 			children = (
-				58F646FF165D5114009509F7 /* FOAppDelegate.h */,
-				58F64700165D5114009509F7 /* FOAppDelegate.m */,
-				58F64708165D5114009509F7 /* FOViewController.h */,
-				58F64709165D5114009509F7 /* FOViewController.m */,
-				58F6470B165D5114009509F7 /* FOViewController.xib */,
+				58F42936165D544500CCC696 /* Classes */,
+				58F42925165D534D00CCC696 /* Resources */,
 				58F646F7165D5114009509F7 /* Supporting Files */,
 			);
 			path = Formation1;
@@ -134,9 +185,6 @@
 				58F646F9165D5114009509F7 /* InfoPlist.strings */,
 				58F646FC165D5114009509F7 /* main.m */,
 				58F646FE165D5114009509F7 /* Formation1-Prefix.pch */,
-				58F64702165D5114009509F7 /* Default.png */,
-				58F64704165D5114009509F7 /* Default@2x.png */,
-				58F64706165D5114009509F7 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,10 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F646FB165D5114009509F7 /* InfoPlist.strings in Resources */,
-				58F64703165D5114009509F7 /* Default.png in Resources */,
-				58F64705165D5114009509F7 /* Default@2x.png in Resources */,
-				58F64707165D5114009509F7 /* Default-568h@2x.png in Resources */,
-				58F6470D165D5114009509F7 /* FOViewController.xib in Resources */,
+				58F42930165D53E800CCC696 /* Default-568h@2x.png in Resources */,
+				58F42931165D53E800CCC696 /* Default.png in Resources */,
+				58F42932165D53E800CCC696 /* Default@2x.png in Resources */,
+				58F42943165D548200CCC696 /* FOViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F646FD165D5114009509F7 /* main.m in Sources */,
-				58F64701165D5114009509F7 /* FOAppDelegate.m in Sources */,
-				58F6470A165D5114009509F7 /* FOViewController.m in Sources */,
+				58F4293F165D544500CCC696 /* FOViewController.m in Sources */,
+				58F42940165D544500CCC696 /* FOAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,20 +344,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		58F42941165D548200CCC696 /* FOViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58F42942165D548200CCC696 /* en */,
+			);
+			name = FOViewController.xib;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		58F646F9165D5114009509F7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				58F646FA165D5114009509F7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		58F6470B165D5114009509F7 /* FOViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58F6470C165D5114009509F7 /* en */,
-			);
-			name = FOViewController.xib;
 			sourceTree = "<group>";
 		};
 		58F6471D165D5114009509F7 /* InfoPlist.strings */ = {
@@ -447,6 +496,7 @@
 				58F64727165D5114009509F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58F64728165D5114009509F7 /* Build configuration list for PBXNativeTarget "Formation1Tests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +505,7 @@
 				58F6472A165D5114009509F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
