@@ -9,6 +9,13 @@
 #import "FOAppDelegate.h"
 
 #import "FOViewController.h"
+#import "FOAccountViewController.h"
+
+// Service
+#import "FOAccountsService.h"
+
+// Model
+#import "FOAccount.h"
 
 @implementation FOAppDelegate
 
@@ -17,8 +24,19 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 	self.viewController = [[FOViewController alloc] initWithNibName:@"FOViewController" bundle:nil];
-	self.window.rootViewController = self.viewController;
+	
+	// Récupération des accounts
+    NSArray *accounts = [FOAccountsService loadSubscribedProductsInCache];
+    FOAccount *anAccount = [accounts objectAtIndex:0];
+    
+    FOAccountViewController *accountViewController = [[FOAccountViewController alloc] initWithNibName:nil
+                                                                                            bundle:nil];
+
+    self.window.rootViewController = accountViewController;
     [self.window makeKeyAndVisible];
+
+	[accountViewController configureWithAccount:anAccount];
+	
     return YES;
 }
 
