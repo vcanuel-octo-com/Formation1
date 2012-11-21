@@ -8,6 +8,12 @@
 
 #import "FOViewController.h"
 
+// Model
+#import "FOAccount.h"
+
+// Service
+#import "FOAccountsService.h"
+
 @interface FOViewController ()
 
 @end
@@ -18,6 +24,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	
+	// Récupération des accounts
+    NSArray *accounts = [FOAccountsService loadSubscribedProductsInCache];
+    FOAccount *anAccount = [accounts lastObject];
+	
+	NSLog(@"%@",accounts);
+	NSLog(@"%@",anAccount);
 }
 
 - (void)didReceiveMemoryWarning

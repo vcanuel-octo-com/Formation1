@@ -13,6 +13,10 @@
 		58F4293F165D544500CCC696 /* FOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F42939165D544500CCC696 /* FOViewController.m */; };
 		58F42940165D544500CCC696 /* FOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F4293B165D544500CCC696 /* FOAppDelegate.m */; };
 		58F42943165D548200CCC696 /* FOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F42941165D548200CCC696 /* FOViewController.xib */; };
+		58F42946165D571A00CCC696 /* FOAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F42945165D571A00CCC696 /* FOAccount.m */; };
+		58F42959165D58AB00CCC696 /* FOAccountsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F42958165D58AB00CCC696 /* FOAccountsService.m */; };
+		58F42962165D591800CCC696 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F42961165D591800CCC696 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		58F42964165D598100CCC696 /* subscribedProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 58F42963165D598100CCC696 /* subscribedProducts.json */; };
 		58F646F1165D5114009509F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F646F0165D5114009509F7 /* UIKit.framework */; };
 		58F646F3165D5114009509F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F646F2165D5114009509F7 /* Foundation.framework */; };
 		58F646F5165D5114009509F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F646F4165D5114009509F7 /* CoreGraphics.framework */; };
@@ -44,6 +48,13 @@
 		58F4293A165D544500CCC696 /* FOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOAppDelegate.h; sourceTree = "<group>"; };
 		58F4293B165D544500CCC696 /* FOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOAppDelegate.m; sourceTree = "<group>"; };
 		58F42942165D548200CCC696 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FOViewController.xib; sourceTree = "<group>"; };
+		58F42944165D571A00CCC696 /* FOAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOAccount.h; sourceTree = "<group>"; };
+		58F42945165D571A00CCC696 /* FOAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOAccount.m; sourceTree = "<group>"; };
+		58F42957165D58AB00CCC696 /* FOAccountsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOAccountsService.h; sourceTree = "<group>"; };
+		58F42958165D58AB00CCC696 /* FOAccountsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOAccountsService.m; sourceTree = "<group>"; };
+		58F42960165D591800CCC696 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		58F42961165D591800CCC696 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		58F42963165D598100CCC696 /* subscribedProducts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = subscribedProducts.json; sourceTree = "<group>"; };
 		58F646EC165D5114009509F7 /* Formation1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Formation1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F646F0165D5114009509F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		58F646F2165D5114009509F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +98,7 @@
 		58F42925165D534D00CCC696 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				58F42963165D598100CCC696 /* subscribedProducts.json */,
 				58F4292D165D53E800CCC696 /* Default-568h@2x.png */,
 				58F4292E165D53E800CCC696 /* Default.png */,
 				58F4292F165D53E800CCC696 /* Default@2x.png */,
@@ -120,6 +132,8 @@
 		58F4293C165D544500CCC696 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				58F42944165D571A00CCC696 /* FOAccount.h */,
+				58F42945165D571A00CCC696 /* FOAccount.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,6 +141,8 @@
 		58F4293D165D544500CCC696 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				58F42957165D58AB00CCC696 /* FOAccountsService.h */,
+				58F42958165D58AB00CCC696 /* FOAccountsService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -138,9 +154,27 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		58F4295E165D591800CCC696 /* ExternalFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58F4295F165D591800CCC696 /* JSONKit */,
+			);
+			path = ExternalFrameworks;
+			sourceTree = "<group>";
+		};
+		58F4295F165D591800CCC696 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				58F42960165D591800CCC696 /* JSONKit.h */,
+				58F42961165D591800CCC696 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
 		58F646E1165D5114009509F7 = {
 			isa = PBXGroup;
 			children = (
+				58F4295E165D591800CCC696 /* ExternalFrameworks */,
 				58F646F6165D5114009509F7 /* Formation1 */,
 				58F6471A165D5114009509F7 /* Formation1Tests */,
 				58F646EF165D5114009509F7 /* Frameworks */,
@@ -285,6 +319,7 @@
 				58F42931165D53E800CCC696 /* Default.png in Resources */,
 				58F42932165D53E800CCC696 /* Default@2x.png in Resources */,
 				58F42943165D548200CCC696 /* FOViewController.xib in Resources */,
+				58F42964165D598100CCC696 /* subscribedProducts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +357,9 @@
 				58F646FD165D5114009509F7 /* main.m in Sources */,
 				58F4293F165D544500CCC696 /* FOViewController.m in Sources */,
 				58F42940165D544500CCC696 /* FOAppDelegate.m in Sources */,
+				58F42946165D571A00CCC696 /* FOAccount.m in Sources */,
+				58F42959165D58AB00CCC696 /* FOAccountsService.m in Sources */,
+				58F42962165D591800CCC696 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
