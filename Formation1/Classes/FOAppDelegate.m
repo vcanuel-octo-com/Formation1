@@ -10,6 +10,7 @@
 
 #import "FOViewController.h"
 #import "FOAccountViewController.h"
+#import "FOAccountsViewController.h"
 
 // Service
 #import "FOAccountsService.h"
@@ -24,18 +25,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 	self.viewController = [[FOViewController alloc] initWithNibName:@"FOViewController" bundle:nil];
-	
-	// Récupération des accounts
-    NSArray *accounts = [FOAccountsService loadSubscribedProductsInCache];
-    FOAccount *anAccount = [accounts objectAtIndex:0];
     
-    FOAccountViewController *accountViewController = [[FOAccountViewController alloc] initWithNibName:nil
+    FOAccountsViewController *accountViewController = [[FOAccountsViewController alloc] initWithNibName:nil
                                                                                             bundle:nil];
 
     self.window.rootViewController = accountViewController;
     [self.window makeKeyAndVisible];
-
-	[accountViewController configureWithAccount:anAccount];
 	
     return YES;
 }
@@ -65,6 +60,19 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+/**************************************************************************************************/
+#pragma mark - Utility
+
+- (void)showAlertWithTitle:(NSString *)theTitle andMessage:(NSString *)theMessage
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:theTitle
+                                                        message:theMessage
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Fermer"
+                                              otherButtonTitles:nil];
+    [alertView show];
 }
 
 @end
